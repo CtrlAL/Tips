@@ -1,0 +1,5 @@
+<select asp-for="Category.ParentCategoryId"
+        class="form-control"
+        asp-items="@(new SelectList(Model.ParentCategories, "Id", "Title"))">
+    <option value="">-- Выберите родительскую категорию --</option>
+</select>
